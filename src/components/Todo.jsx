@@ -119,7 +119,12 @@ const Todo = () => {
                     {
                         itemValue.map((item) => {
                             return (
-                                <li key={item.id}>
+                                <li key={item.id} style={{
+                                    padding: '20px',
+                                    border: '1px solid red',
+                                    borderRadius: '5px',
+                                    marginBottom: '10px',
+                                }}>
                                     <input
                                         type="checkbox"
                                         checked={completedItems.includes(item.id)}
